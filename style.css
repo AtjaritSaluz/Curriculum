@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    height: 100%;
+
+}
+
+body {
+    font-family: 'Gill Sans','Gill Sans MT',Calibri;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+  
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,1);
+    border-radius:4px ;
+    padding: 10px;
+    text-align: center;
+}
+  
+.header{
+    grid-area:header;
+    background-color: aquamarine;
+}
+  
+.navbar{
+    grid-area: navbar;
+    background-color: bisque;
+
+}
+  .main{
+    grid-area: main;
+    background-color: cadetblue;
+  }
+  .sidebar{
+    grid-area: sidebar;
+    background-color:chocolate ;
+  }
+  .footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+  }
+  .grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header" "navbar" "main" "sidebar" "footer"
+}
+
+  @media(min-width:400px){
+    .grid-container{
+    grid-template:
+    "header header" 100px
+    "navbar navbar" 50px
+    "sidebar main" auto
+    "footer footer" 100px/200px auto;
+    }
+    
+}
+  @media(min-widht:600px){
+    .grid-container{
+      grid-template: 
+      "header header"
+      "navbar navbar"
+      "sidebar main"
+      "footer footer";
+    }
+}
+  @media(min-widht:900px){
+    .grid-container{
+      grid-template: 
+      "header header header" 100px
+      "navbar main sidebar" auto 
+      "footer footer footer"100px/200px auto;
+    }
+    
+}
+  
+   .p1{
+       padding: 10px 40px;
+       font-size: 60px;
+  }
+  .grid-container {
+      text-align: right;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      color:white;
+    }  
+
+  .html{
+      width: 300%;
+      background-color: white;
+  }
+  .css{
+      width: 260%;
+      background-color: white;
+      }
+  .java{
+      width: 250%;
+      background-color: white;
+      }    
+  .jquery{
+      width: 200%;
+      background-color: white;
+      }    
+  .left{
+      
+      width: 20%;
+      height: 20%;
+      float:left;
+      
+  }
+  .perfil-img{
+      height: 130%;
+      width: 180px;
+      background-color: #ddd;
+      border-radius: 5%;
+      margin-bottom: 10%;
+      margin-left: 160%;
+      border: 8px, solid #fbb03b;
+      box-shadow: 8px 10px 9px 10px #fbb03b73;
+      }
